@@ -1,9 +1,9 @@
 function solution(n) {
-    let answer = 0;
-    for (let i = 1 ; i <= n ; i++) {
-        if (parseInt(n / i) * i === n) {
-            answer++;
+    const answer = []
+    for (let i = 0; i < n + 1; i++) {
+        if (n % i === 0) {
+            answer.push(i)
         }
     }
-    return answer;
+    return answer.length
 }
