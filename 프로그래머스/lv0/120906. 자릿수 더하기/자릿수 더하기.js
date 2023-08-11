@@ -1,3 +1,6 @@
 function solution(n) {
-    return n.toString().split('').map((v) => Number(v)).reduce((a, c) => a + c, 0)
+    return n
+        .toString()
+        .split('')
+        .reduce((a, c) => a + Number(c), 0)
 };
