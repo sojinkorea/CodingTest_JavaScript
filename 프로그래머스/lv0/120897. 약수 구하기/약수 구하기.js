@@ -1,10 +1,9 @@
 function solution(n) {
-    const array = [];
-    const answer = array.sort((a,b) => a - b)
+    const answer = [];
     
     for (i = 1; i <= n; i++) {
         if (n % i === 0) {
-            array.push(i);
+            answer.push(i);
         }
     }
     return answer;
